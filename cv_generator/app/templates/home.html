@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="UTF-8"> 
+	<meta name="csrf-token" content="{% csrf_token %}" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+	<script src="static/js/script.js"></script>
+</head>
+<body>
+	<center><h3>Resume</h3></center>
+	<center>
+		Name: <input type="text" name="name" class="xname"><br /><br />
+		<!--Sex:  <input type="text" name="sex" class="xsex"><br /><br />-->
+		Date of Birth:<input type="text" name="date_of_birth" class="dob"><br /><br />
+		Email ID: <input type="email" name="email_ID" class="email"><br /><br />
+		Mobile no: <input type="text" name="mobile_no" class="mobile"><br /><br />
+		<!--Father name: <input type="text" name="father_name" class="father"><br /><br />
+		Mother name: <input type="text" name="mother_name" class="mother"><br /><br />-->
+		Address: <textarea type="text" name="address" class="address"></textarea><br /><br />
+		<!--Course: <input type="text" name="course" class="course"><br /><br />
+		Year: <input type="text" name="year" class="year"><br /><br />
+		Qualification: <textarea type="text" name="qualification" class="xqualification"></textarea><br /><br />
+		Achievement: <textarea type="text" name="achievement" class="xachievement"></textarea><br /><br />
+		Job Experience: <textarea type="text" name="job_experience" class="job"></textarea><br /><br />
+		Hobbies: <textarea type="text" name="hobbies" class="xhobbies"></textarea><br /><br />
+		Marital Status: <input type="text" name="marital_status" class="status"><br /><br />
+		References: <textarea type="text" name="references" class="xreferences"></textarea><br /><br />-->
+		<input id="generate" type="submit" value="Submit" >
+	</center>
+</body>
+</html>
