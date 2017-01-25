@@ -10,24 +10,25 @@ $(document).ready(function(){
 		if(name==""||dob==""||email==""||mobile==""||address=="")
 			 alert("Please fill all fields");
         
-        else
-			$.ajax({
-				type:'POST',
-				headers: {
-      				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
-   						},
-				url: "/generate",
-				data: {
-   						'name':name,
-   						'date_of_birth':dob,
-   						'email_ID':email,
-   						'mobile_no':mobile,
-   						'address':address,
-   						},
-				success: function(data){
+        //else
+		//	$.ajax({
+		//		type:'POST',
+		//		headers: {
+      	//			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+   		//				},
+		//		url: "/generate",
+		//		data: {
+   		//				'name':name,
+   		//				'date_of_birth':dob,
+   		//				'email_ID':email,
+   		//				'mobile_no':mobile,
+   		//				'address':address,
+   		//				},
+		//		success: function(data){
+					$("#tem").html(data);
 					console.log(data);
-				}
-			});
+		//		}
+		//	});
 
 	});
 })

@@ -8,6 +8,7 @@
 <body>
 	<center><h3>Resume</h3></center>
 	<center>
+	<form action="/generate" method="post">
 		Name: <input type="text" name="name" class="xname"><br /><br />
 		<!--Sex:  <input type="text" name="sex" class="xsex"><br /><br />-->
 		Date of Birth:<input type="text" name="date_of_birth" class="dob"><br /><br />
@@ -25,6 +26,8 @@
 		Marital Status: <input type="text" name="marital_status" class="status"><br /><br />
 		References: <textarea type="text" name="references" class="xreferences"></textarea><br /><br />-->
 		<input id="generate" type="submit" value="Submit" >
+		</form>
 	</center>
+	<span id="tem"></span>
 </body>
 </html>
